@@ -59,7 +59,7 @@ const Card = props => {
 const Item = ({ item, type }) => {
   const { title, price, storage, users, volume, className } = item;
   const priceValue = price[type];
-  console.log({priceValue, type, price})
+  //console.log({priceValue, type, price})
   return (
     <ItemContainer className={className || ""}>
       <ComponentContainer>
