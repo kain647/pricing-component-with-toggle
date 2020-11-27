@@ -34,7 +34,7 @@ export const ToggleContainer = styled.div`
     }
   }
 `;
-export const SwitchContainer = styled.div`
+export const SwitchContainer = styled.label`
   position: relative;
   box-sizing: border-box;
   justify-content: center;
@@ -64,12 +64,12 @@ export const Circle = styled.div`
     content: "";
     height: 23px;
     width: 23px;
-    left: ${({ value }) => (value ? "4px" : "auto")};
-    right: ${({ value }) => (value ? "auto" : "4px")};
+    left: ${({ value }) => (value ? "4px" : "34px")};
+    right: ${({ value }) => (value ? "35px" : "4px")};
     bottom: 3px;
     border-radius: 50%;
     background-color: white;
-    transition: 0.2s;
+    transition: all 0.4s ease 0s;
   }
 `;
 export const CardContainer = styled.div`
@@ -139,6 +139,7 @@ export const Button = styled.button`
   display: flex;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: 700;
   &.left {
     width: 80%;
     justify-content: center;
